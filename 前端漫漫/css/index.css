@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+#wrapper #header .headTop {
+  height: 30px;
+  background-color: #eaeaea;
+  border: 3px solid red;
+}
+#wrapper #header .headTop .headTopmain {
+  width: 1200px;
+  margin: 0 auto;
+}
+#wrapper #header .headTop .headTopmain .left h4 {
+  float: left;
+  margin: 5px auto;
+}
+#wrapper #header .headTop .headTopmain .left p {
+  float: left;
+  margin-top: 5px;
+  font-size: 16px;
+}
+#wrapper #header .headTop .headTopmain .left p a {
+  text-decoration: none;
+}
+#wrapper #header .headTop .headTopmain .left p a:first-child {
+  border-right: 1px solid #b3aeb3;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+#wrapper #header .headTop .headTopmain .left p a:hover {
+  color: red;
+}
+#wrapper #header .headTop .headTopmain .left .user {
+  font-size: 18px;
+  color: #000000;
+  margin-right: 30px;
+}
+#wrapper #header .headTop .headTopmain .left .user a {
+  border-right: none;
+  margin-left: 35px;
+}
+#wrapper #header .headTop .right {
+  float: left;
+  line-height: 2px;
+  padding-left: 250px;
+  font-size: 14px;
+}
+#wrapper #header .headTop .right li {
+  display: inline;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-right: 1px solid #b3aeb3;
+  cursor: pointer;
+}
+#wrapper #header .headTop .right li:last-child {
+  border: none;
+}
+#wrapper #header .headTop .right li:hover {
+  color: #ca2222;
+}
+.center {
+  height: 110px;
+}
+.center .img {
+  display: flex;
+  float: left;
+  position: absolute;
+  padding-left: 300px;
+  padding-top: 30px;
+}
+.center .img img {
+  width: 70px;
+  height: 70px;
+}
+.center .img .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  line-height: 0;
+}
+.center .img .name h3 {
+  color: lightcoral;
+}
+.center .sousuo {
+  float: right;
+  padding-right: 200px;
+  padding-top: 50px;
+}
+.center .sousuo input {
+  width: 400px;
+  height: 28px;
+  border: 3px solid red;
+}
+.center .sousuo button {
+  height: 34.8px;
+  width: 80px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: orangered;
+  border: none;
+}
+.contain ul {
+  margin-left: 260px;
+  margin-bottom: 0;
+}
+.contain ul li {
+  font-size: 17px;
+  display: inline-block;
+  margin-right: 40px;
+  color: darkslategrey;
+  text-align: center;
+  width: 75px;
+  height: 37px;
+  padding-top: 4px;
+}
+.contain ul li:first-child {
+  display: inline-block;
+  margin-right: 60px;
+  background-color: orangered;
+  width: 200px;
+  height: 50px;
+  color: white;
+  line-height: 50px;
+}
+.contain li:hover {
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+.contain .show {
+  background-color: orangered;
+  color: white;
+}
+.contain hr {
+  margin: 0;
+  border: 1.5px solid orangered;
+}
+.hexin {
+  height: 800px;
+}
+.hexin .cleft {
+  padding-left: 240px;
+  padding-top: 20px;
+  float: left;
+}
+.hexin .cleft .leixing p {
+  font-size: 12px;
+  color: darkcyan;
+}
+.hexin .cleft .lunbo img {
+  border: 1px solid #b3aeb3;
+  width: 380px;
+  height: 420px;
+  display: none;
+}
+.hexin .cleft .lunbo .suolue img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-top: 28px;
+  margin-right: 15px;
+  border: 1px solid #b3aeb3;
+}
+.hexin .cleft .lunbo .suolue .active1 {
+  border: 3px solid red;
+}
+.hexin .cleft .lunbo .active {
+  display: block;
+}
+.hexin .cleft .lunbo #left {
+  float: left;
+  width: 130px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #b3aeb3;
+}
+.hexin .cleft .lunbo #right {
+  margin-right: 14px;
+  float: right;
+  width: 130px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #b3aeb3;
+}
+.hexin .cleft .lunbo button:hover {
+  color: white;
+}
+.hexin .cright {
+  float: left;
+  padding-left: 100px;
+  padding-top: 40px;
+  width: 620px;
+  line-height: 32px;
+}
+.hexin .cright .phone1 .mes {
+  background-color: #b6cfdd;
+  padding: 10px 0px;
+  line-height: 40px;
+}
+.hexin .cright .phone1 .mes P {
+  padding-left: 57px;
+}
+.hexin .cright .phone1 .mes P #cho {
+  display: none;
+  color: red;
+  font-size: 17px;
+  padding-left: 11px;
+}
+.hexin .cright .phone1 .mes button {
+  width: 82px;
+  height: 39px;
+}
+.hexin .cright .phone1 p {
+  font-size: 14px;
+}
+.hexin .cright .phone1 p button {
+  border: 1px solid darkgrey;
+  background-color: white;
+  margin-left: 10px;
+}
+.hexin .cright .phone1 p button:hover {
+  background-color: #d55a5a;
+  color: white;
+}
+.hexin .cright .phone1 p .active2 {
+  background-color: #af4343;
+  color: white;
+}
+.hexin .cright .phone1 .one {
+  font-size: 13px;
+  color: red;
+}
+.hexin .cright .phone1 span {
+  font-size: 13px;
+  color: #898689;
+  margin-left: 16px;
+}
+.hexin .cright .phone1 .youhui {
+  width: 700px;
+  height: 130px;
+  background-color: #f6dbdb;
+  padding-left: 7px;
+  padding-top: 1px;
+}
+.hexin .cright .phone1 .youhui b {
+  color: #a40404;
+  margin-left: 13px;
+  font-size: 24px;
+}
+.hexin .cright .phone1 .youhui #font {
+  font-size: 28px;
+}
+.hexin .cright .phone1 .youhui #one {
+  color: red;
+}
+.hexin .cright .phone1 .youhui #two {
+  background-color: #b72e2e;
+  color: white;
+  padding: 5px 2px;
+  margin-left: 4px;
+}
+.hexin .cright .jiesuan button {
+  margin-top: 15px;
+  background-color: orangered;
+  width: 130px;
+  height: 40px;
+  color: white;
+  border: none;
+}
+.hexin .cright .jiesuan button:hover {
+  background-color: red;
+  transform: scale(1.1, 1.1);
+}
+.hexin .cright .jiesuan li {
+  display: inline-block;
+  color: #d52b2b;
+  margin-right: 5px;
+  font-size: 19px;
+}
+.hexin .cright .jiesuan .jiage {
+  font-size: 25px;
+  color: #151515;
+}
+.hexin .cright .jiesuan a {
+  text-decoration: none;
+  font-size: 25px;
+}
+.hexin .cright .jiesuan .itxt {
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+}

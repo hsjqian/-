@@ -1,0 +1,166 @@
+body {
+  height: 100%;
+  width: 100%;
+  background: url('../images/a.png') no-repeat;
+  background-size: cover;
+}
+.dowebok {
+  z-index: 1;
+  background: url('../images/2.png');
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 430px;
+  height: 600px;
+  margin: -300px 0 0 -215px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: none;
+}
+.logo {
+  width: 154px;
+  height: 104px;
+  margin: 50px auto 50px;
+}
+.logo img {
+  position: relative;
+  left: 20px;
+}
+.logo p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+}
+.form-item {
+  position: relative;
+  width: 360px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.form-item input {
+  width: 288px;
+  height: 48px;
+  padding-left: 70px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+}
+.form-item button {
+  width: 360px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #f52c76;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  margin-top: 30px;
+}
+.form-item button:hover {
+  background-color: #ed8d92;
+  color: white;
+}
+.form-item img {
+  position: relative;
+  top: 43px;
+  left: 14px;
+}
+.tip {
+  display: none;
+}
+.tip.active {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 70px;
+  font-size: 17px;
+  color: #895034;
+}
+.reg-bar {
+  width: 360px;
+  margin: 20px auto 0;
+  font-size: 19px;
+  overflow: hidden;
+}
+.reg-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+.reg-bar a:hover {
+  text-decoration: underline;
+}
+.reg-bar .reg {
+  float: left;
+}
+.reg-bar .forget {
+  float: right;
+}
+.dowebok ::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+}
+.dowebok :-moz-placeholder {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+}
+.dowebok ::-moz-placeholder {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+}
+.dowebok :-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+}
+@media screen and (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
+  .dowebok {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0 30px;
+    border: 0;
+    border-radius: 0;
+  }
+  .logo {
+    margin: 50px auto;
+  }
+  .form-item {
+    width: auto;
+  }
+  .form-item input,
+  .form-item button,
+  .reg-bar {
+    width: 100%;
+  }
+}
+.login_box .del img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 387px;
+  top: 20px;
+}
+.login_box .del img:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+.regist_box .del img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 387px;
+  top: 20px;
+}
+.regist_box .del img:hover {
+  transform: rotate(15deg) scale(1.2);
+}

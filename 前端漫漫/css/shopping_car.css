@@ -1,0 +1,180 @@
+.bow2 {
+  position: absolute;
+}
+.bow2 .top .name {
+  position: relative;
+  left: 277px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1px;
+  color: #af0b0b;
+}
+.bow2 .top img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 150px;
+  top: 30px;
+}
+.bow2 .top p {
+  position: relative;
+  left: 427px;
+  top: -40px;
+  color: rgba(42, 61, 61, 0.536);
+}
+.bow2 .mid h2 {
+  margin-left: 130px;
+}
+.bow2 .mid .bq {
+  width: 1300px;
+  background-color: #efdfdf;
+  height: 45px;
+  position: relative;
+  left: 130px;
+  top: -22px;
+}
+.bow2 .mid .bq input {
+  width: 17px;
+  height: 17px;
+}
+.bow2 .mid .bq .input {
+  margin-top: 10px;
+  float: left;
+  margin-left: 5px;
+}
+.bow2 .mid .bq ul {
+  float: left;
+  margin-top: 13px;
+}
+.bow2 .mid .bq ul li {
+  display: inline-flex;
+}
+.bow2 .mid .bq ul li:first-child {
+  margin-left: 40px;
+  margin-right: 400px;
+}
+.bow2 .mid .bq ul li:nth-child(3) {
+  margin-left: 150px;
+  margin-right: 190px;
+}
+.bow2 .mid .bq ul li:nth-child(5) {
+  margin-left: 110px;
+}
+.bow2 .mid .goods {
+  margin-left: 130px;
+  border: 1px solid #726d6d;
+  border-top: 3px solid #3c3b3b;
+  width: 1300px;
+}
+.bow2 .mid .goods .good {
+  margin-top: 15px;
+  display: inline-flex;
+  position: relative;
+  height: 140px;
+  border-bottom: 1px solid #6b5c5c;
+  width: 1300px;
+}
+.bow2 .mid .goods .good input {
+  margin-top: 30px;
+  width: 17px;
+  height: 17px;
+}
+.bow2 .mid .goods .good img {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #7e7878;
+}
+.bow2 .mid .goods .good .text {
+  margin-left: 13px;
+  width: 200px;
+  line-height: 26px;
+  color: #58565b;
+  font-size: 18px;
+}
+.bow2 .mid .goods .good .g-price {
+  margin-left: 180px;
+  margin-right: 120px;
+  margin-top: 20px;
+}
+.bow2 .mid .goods .good .price {
+  margin-left: 160px;
+  margin-right: 110px;
+  margin-top: 20px;
+}
+.bow2 .mid .goods .good .num {
+  display: flex;
+}
+.bow2 .mid .goods .good .num a {
+  margin-top: 20px;
+  height: 30px;
+  border: 1px solid #707676;
+  font-size: 20px;
+}
+.bow2 .mid .goods .good .num input {
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 18px;
+  width: 38px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #8c9393;
+  border-left: none;
+  border-right: none;
+}
+.bow2 .mid .goods .good a {
+  text-decoration: none;
+}
+.bow2 .mid .goods .good .del {
+  color: #1e1d1c;
+}
+.bow2 .mid .goods .good .del:hover {
+  color: red;
+}
+.bow2 .mid .goods .good .re {
+  color: #585b5b;
+  margin-left: 15px;
+}
+.bow2 .mid .goods .good .re:hover {
+  color: red;
+}
+.bow2 .bottom {
+  margin-left: 130px;
+  border: 1px solid #4c4c52;
+  margin-top: 10px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.bow2 .bottom .bot {
+  margin-top: 20px;
+}
+.bow2 .bottom input {
+  width: 17px;
+  height: 17px;
+}
+.bow2 .bottom a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: #7a8285;
+}
+.bow2 .bottom a:hover {
+  color: red;
+}
+.bow2 .bottom .all1 {
+  float: right;
+  margin-right: 20px;
+}
+.bow2 .bottom .all1 button {
+  margin-left: 30px;
+  margin-right: 20px;
+  border: none;
+  width: 90px;
+  height: 40px;
+  background-color: #f06d16;
+}
+.bow2 .bottom .all1 button:hover {
+  background-color: #c05534;
+  color: white;
+}

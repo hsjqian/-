@@ -1,0 +1,168 @@
+// 首页部分
+.home {
+    h1 {
+        text-align: center;
+        background-image: -webkit-linear-gradient(bottom, rgb(203, 10, 10), #fd8403, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    // 头部
+    .start {
+        height: 400px;
+
+        // 商品秒杀
+        .time {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // 倒计时
+            .timed {
+                float: left;
+                width: 230px;
+                height: 260px;
+                border: 1px solid black;
+            }
+
+            // 秒杀商品图片 
+            .time_pic {
+
+                a {
+                    text-decoration: none;
+                    // display: inline-block;
+                    float: left;
+                    width: 240px;
+                    height: 260px;
+                    border: 1px solid black;
+                    // position: absolute;
+
+                    img {
+                        top: 20px;
+                        position: relative;
+                        width: 160px;
+                        height: 160px;
+
+                    }
+
+                    img:hover {
+                        opacity: 0.7;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    h6 {
+                        color: black;
+                        line-height: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    h5 {
+                        margin-top: 0;
+                        color: rgb(220, 25, 25);
+                    }
+
+                    h5:hover {
+                        color: rgb(240, 123, 123);
+                    }
+                }
+
+
+            }
+
+
+        }
+
+
+    }
+
+    // 中心内容
+    .content {
+        text-align: center;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        // 板块一——手机数码
+        .index1 {
+            height: 400px;
+        }
+
+        // 板块二——美妆馆
+        .index2 {
+            height: 400px;
+        }
+
+        // 板块三——优选超市
+        .index3 {
+            height: 400px;
+        }
+
+        // 板块四——全球购
+        .index4 {
+            height: 400px;
+        }
+    }
+
+    // 导航电梯
+    .daohang {
+
+        display: none;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            word-wrap: break-word;
+            position: fixed;
+            top: 200px;
+
+            li {
+                cursor: pointer;
+                letter-spacing: 5px;
+
+                &:first-child {
+                    border: none;
+                }
+
+                color: rgb(59, 46, 46);
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+                background-color: #f4f4f4;
+                text-align: center;
+                font-size: 16px;
+                border-top: 1px solid rgb(188, 182, 182);
+                list-style: none;
+                width: 58px;
+                height: 70px;
+                line-height: 25px;
+
+
+            }
+
+            .active {
+                color: white;
+                background-color: rgb(230, 93, 93);
+            }
+
+            li:hover {
+                color: white;
+                background-color: rgb(230, 93, 93);
+            }
+        }
+
+    }
+
+    // 结尾部分
+    .end {
+        height: 500px;
+    }
+}

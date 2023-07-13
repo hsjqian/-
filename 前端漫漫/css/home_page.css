@@ -1,0 +1,112 @@
+.home h1 {
+  text-align: center;
+  background-image: -webkit-linear-gradient(bottom, #cb0a0a, #fd8403, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home .start {
+  height: 400px;
+}
+.home .start .time {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .start .time .timed {
+  float: left;
+  width: 230px;
+  height: 260px;
+  border: 1px solid black;
+}
+.home .start .time .time_pic a {
+  text-decoration: none;
+  float: left;
+  width: 240px;
+  height: 260px;
+  border: 1px solid black;
+}
+.home .start .time .time_pic a img {
+  top: 20px;
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+.home .start .time .time_pic a img:hover {
+  opacity: 0.7;
+}
+.home .start .time .time_pic a:hover {
+  opacity: 1;
+}
+.home .start .time .time_pic a h6 {
+  color: black;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.home .start .time .time_pic a h5 {
+  margin-top: 0;
+  color: #dc1919;
+}
+.home .start .time .time_pic a h5:hover {
+  color: #f07b7b;
+}
+.home .content {
+  text-align: center;
+}
+.home .content img {
+  width: 200px;
+  height: 200px;
+}
+.home .content .index1 {
+  height: 400px;
+}
+.home .content .index2 {
+  height: 400px;
+}
+.home .content .index3 {
+  height: 400px;
+}
+.home .content .index4 {
+  height: 400px;
+}
+.home .daohang {
+  display: none;
+}
+.home .daohang ul {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  position: fixed;
+  top: 200px;
+}
+.home .daohang ul li {
+  cursor: pointer;
+  letter-spacing: 5px;
+  color: #3b2e2e;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-size: 16px;
+  border-top: 1px solid #bcb6b6;
+  list-style: none;
+  width: 58px;
+  height: 70px;
+  line-height: 25px;
+}
+.home .daohang ul li:first-child {
+  border: none;
+}
+.home .daohang ul .active {
+  color: white;
+  background-color: #e65d5d;
+}
+.home .daohang ul li:hover {
+  color: white;
+  background-color: #e65d5d;
+}
+.home .end {
+  height: 500px;
+}

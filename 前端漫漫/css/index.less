@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+// 最外层的包裹元素
+#wrapper {
+
+    // 头部
+    #header {
+
+        // 上面部分
+        .headTop {
+            height: 30px;
+            background-color: #eaeaea;
+            border: 3px solid red;
+
+            // 版心元素
+            .headTopmain {
+                width: 1200px;
+                margin: 0 auto;
+
+
+                // 左侧
+                .left {
+
+
+                    h4 {
+                        float: left;
+                        margin: 5px auto;
+                    }
+
+
+                    p {
+                        float: left;
+                        margin-top: 5px;
+                        font-size: 16px;
+
+                        a {
+                            &:first-child {
+                                border-right: 1px solid #b3aeb3;
+                                margin-left: 10px;
+                                padding-right: 5px;
+
+
+                            }
+
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            color: red;
+                        }
+                    }
+
+                    .user {
+
+                        font-size: 18px;
+                        color: #000000;
+                        margin-right: 30px;
+
+                        a {
+                            border-right: none;
+                            margin-left: 35px;
+                        }
+                    }
+
+
+
+                }
+            }
+
+            // 右侧
+            .right {
+                float: left;
+                line-height: 2px;
+                padding-left: 250px;
+                font-size: 14px;
+
+                li {
+                    display: inline;
+                    padding-right: 8px;
+                    padding-left: 6px;
+                    border-right: 1px solid #b3aeb3;
+                    cursor: pointer;
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+
+                li:hover {
+                    color: #ca2222;
+                }
+            }
+        }
+    }
+}
+
+// 中间部分
+.center {
+    height: 110px;
+
+    // 图标
+    .img {
+        display: flex;
+        float: left;
+        position: absolute;
+        padding-left: 300px;
+        padding-top: 30px;
+
+        // 商标
+        img {
+            width: 70px;
+            height: 70px;
+        }
+
+        // 名称
+        .name {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            line-height: 0;
+
+            h3 {
+                color: lightcoral;
+            }
+        }
+
+
+    }
+
+    // 搜索框
+    .sousuo {
+        float: right;
+        padding-right: 200px;
+        padding-top: 50px;
+
+        input {
+            width: 400px;
+            height: 28px;
+            border: 3px solid red;
+        }
+
+        button {
+            height: 34.8px;
+            width: 80px;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: orangered;
+            border: none;
+
+        }
+
+    }
+}
+
+// 商品分类
+.contain {
+    ul {
+        margin-left: 260px;
+        margin-bottom: 0;
+
+        li {
+
+            &:first-child {
+                display: inline-block;
+                margin-right: 60px;
+                background-color: orangered;
+                width: 200px;
+                height: 50px;
+                color: white;
+                line-height: 50px;
+            }
+
+            font-size: 17px;
+            display: inline-block;
+            margin-right: 40px;
+            color:darkslategrey;
+            text-align: center;
+            width: 75px;
+            height: 37px;
+            padding-top: 4px;
+        }
+    }
+
+    li:hover {
+
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }
+
+    .show {
+        background-color: orangered;
+        color: white;
+    }
+
+    hr {
+        margin: 0;
+        border: 1.5px solid orangered;
+    }
+}
+
+// 核心部分
+.hexin {
+    height: 800px;
+
+    // 左侧
+    .cleft {
+        padding-left: 240px;
+        padding-top: 20px;
+        float: left;
+
+        // 商品类型
+        .leixing {
+            p {
+                font-size: 12px;
+                color: darkcyan;
+            }
+        }
+
+        // 轮播图
+        .lunbo {
+            img {
+                border: 1px solid #b3aeb3;
+                width: 380px;
+                height: 420px;
+                display: none;
+            }
+
+            .suolue {
+                img {
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 28px;
+                    margin-right: 15px;
+                    border: 1px solid #b3aeb3;
+                }
+
+                .active1 {
+                    border: 3px solid red;
+                }
+            }
+
+
+
+            .active {
+                display: block;
+            }
+
+            #left {
+                // position: relative;
+                float: left;
+                width: 130px;
+                height: 40px;
+                margin-top: 10px;
+                background-color: #b3aeb3;
+
+            }
+
+            #right {
+                // position: relative;  
+                margin-right: 14px;
+                float: right;
+                width: 130px;
+                height: 40px;
+                margin-top: 10px;
+                background-color: #b3aeb3;
+
+            }
+
+            button:hover {
+                color: white;
+            }
+        }
+    }
+
+    // 右侧
+    .cright {
+        float: left;
+        padding-left: 100px;
+        padding-top: 40px;
+        width: 620px;
+        line-height: 32px;
+
+        // 手机信息
+        .phone1 {
+            .mes {
+                background-color: #b6cfdd;
+                padding: 10px 0px;
+                line-height: 40px;
+
+                P {
+                    padding-left: 57px;
+
+                    #cho {
+                        display: none;
+                        // display: inline;
+                        color: red;
+                        font-size: 17px;
+                        padding-left: 11px;
+                    }
+                }
+
+                button {
+                    width: 82px;
+                    height: 39px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+
+
+                button {
+                    border: 1px solid darkgrey;
+                    background-color: white;
+                    margin-left: 10px;
+                }
+
+                button:hover {
+                    background-color: rgb(213, 90, 90);
+                    color: white;
+                }
+
+                .active2 {
+                    background-color: rgb(175, 67, 67);
+                    color: white;
+                }
+            }
+
+            .one {
+                font-size: 13px;
+                color: red;
+            }
+
+            span {
+                font-size: 13px;
+                color: #898689;
+                margin-left: 16px;
+            }
+
+            .youhui {
+                width: 700px;
+                height: 130px;
+                background-color: rgb(246, 219, 219);
+                padding-left: 7px;
+                padding-top: 1px;
+
+                b {
+                    color: rgb(164, 4, 4);
+                    margin-left: 13px;
+                    font-size: 24px;
+                }
+
+                #font {
+                    font-size: 28px;
+                }
+
+                #one {
+                    color: red;
+                }
+
+
+
+                #two {
+                    background-color: rgb(183, 46, 46);
+                    color: white;
+                    padding: 5px 2px;
+                    margin-left: 4px;
+                }
+            }
+
+        }
+
+        .jiesuan {
+            button {
+                margin-top: 15px;
+                background-color: orangered;
+                width: 130px;
+                height: 40px;
+                color: white;
+                border: none;
+            }
+
+            button:hover {
+                background-color: red;
+                transform: scale(1.1, 1.1);
+            }
+
+            li {
+                display: inline-block;
+                color: rgb(213, 43, 43);
+                margin-right: 5px;
+                font-size: 19px;
+            }
+
+            .jiage {
+                font-size: 25px;
+                color: #151515;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 25px;
+            }
+
+            .itxt {
+                width: 30px;
+                height: 30px;
+                font-size: 22px;
+            }
+        }
+    }
+}
