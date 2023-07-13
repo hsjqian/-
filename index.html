@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/shopping_car.css" />
+  <link rel="stylesheet" href="css/home_page.css" />
+  <link rel="stylesheet" href="css/login.css" />
+
+  <body>
+    <!-- 登录界面模态框 -->
+
+    <div class="dowebok">
+      <!-- 登录界面 -->
+
+      <div class="login_box">
+        <div class="del">
+          <a href="javascript:;"><img src="images/叉1.png" alt="#" /></a>
+        </div>
+        <div class="logo">
+          <img src="images/login.png" alt="" />
+          <p>欢迎<b style="color: #ec6060; font-size: 21px">登录</b>小吉优选</p>
+        </div>
+        <div class="form-item">
+          <img src="images/emil.png" />
+          <input id="username" type="text" placeholder="用户名" />
+          <p class="tip">该用户名不存在！</p>
+          <p class="tip">请输入用户名！</p>
+        </div>
+        <div class="form-item">
+          <img src="images/password.png" alt="" />
+          <input id="password" type="password" placeholder="登录密码" />
+          <p class="tip">用户名或密码不正确!</p>
+          <p class="tip">请输入密码!</p>
+        </div>
+        <div class="form-item"><button id="submit">登 录</button></div>
+        <div class="reg-bar">
+          <a class="reg" href="javascript:;">没有账号？立即注册</a>
+          <a class="forget" href="javascript:;">忘记密码</a>
+        </div>
+      </div>
+
+      <!-- 注册页面 -->
+      <div class="regist_box" style="display: none">
+        <div class="del">
+          <a href="javascript:;"><img src="images/叉2.png" alt="#" /></a>
+        </div>
+        <div class="logo">
+          <img src="images/login.png" alt="" />
+          <p>欢迎<b style="color: #ec6060; font-size: 21px">注册</b>小吉优选</p>
+        </div>
+        <div class="form-item">
+          <img src="images/emil.png" />
+          <input id="username" type="text" placeholder="用户名：2-10个汉字" />
+          <p class="tip">用户名必须为2-10个汉字</p>
+          <p class="tip">该用户名已存在</p>
+        </div>
+        <div class="form-item">
+          <img src="images/password.png" alt="" />
+          <input
+            id="password"
+            type="password"
+            placeholder="密码：3-9位数字或字母"
+          />
+          <p class="tip">密码必须为3-9位数字或字母组成</p>
+        </div>
+        <div class="form-item"><button id="regit">注 册</button></div>
+        <div class="reg-bar">
+          <a class="reg_login" href="javascript:;" style="padding-left: 89px"
+            >已有账号？立即登录</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- 最外层的包裹元素 -->
+    <div id="wrapper">
+      <!--———— 头部 ————-->
+      <header id="header">
+        <!-- 上面部分 -->
+        <div class="headTop">
+          <!-- 版心元素 -->
+          <div class="headTopmain">
+            <!-- 左侧 -->
+            <div class="left">
+              <div class="users">
+                <h4>欢迎来到小吉优选！请</h4>
+                <p>
+                  <a href="javascript:;" class="login">登录</a>
+                  <a href="javascript:;" class="regist">注册</a>
+                </p>
+              </div>
+              <p class="user">
+                <!-- <a
+                  href="#"
+                  class="back"
+                  onclick="{
+                  window.location.reload();
+                }"
+                  >退出</a
+                > -->
+              </p>
+            </div>
+
+            <!-- 右侧 -->
+            <div class="right">
+              <ul>
+                <li>首页</li>
+                <li>我的购物车</li>
+                <li>我的优选</li>
+                <li>优选会员</li>
+                <li>企业采购</li>
+                <li>关注小吉优选</li>
+                <li>合作招聘</li>
+                <li>商家后台</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--———— 中间部分 ————-->
+      <!-- tab栏切换 -->
+      <div class="bow">
+        <div class="center">
+          <!-- 图标 -->
+          <div class="img">
+            <!-- 商标 -->
+            <img src="images/food.png" />
+            <!-- 名称 -->
+            <div class="name">
+              <h3>小吉优选</h3>
+              <h3>&nbsp;Xiao Ji</h3>
+            </div>
+          </div>
+          <!-- 搜索框 -->
+          <div class="sousuo">
+            <input type="text" placeholder="请输入搜索内容" />
+            <button>搜索</button>
+          </div>
+        </div>
+        <!-- 商品分类 -->
+        <div class="contain">
+          <ul>
+            <li><b>全部商品分类</b></li>
+            <li>手机数码</li>
+            <li>美妆馆</li>
+            <li>优选超市</li>
+            <li>全球购</li>
+            <li>闪购</li>
+            <li>团购</li>
+            <li>有趣</li>
+            <li>秒杀</li>
+          </ul>
+          <hr />
+        </div>
+        <!--—————— 核心部分 ————————-->
+        <div class="row">
+          <!-- ——————————————首页 ————————————-->
+          <div class="home">
+            <!-- 头部 -->
+            <div class="start">
+              <h1>全部商品——小吉优选</h1>
+              <!-- 商品秒杀 -->
+              <div class="time">
+                <!-- 倒计时 -->
+                <div class="timed">
+                  <h2>小吉秒杀</h2>
+                </div>
+                <!-- 秒杀商品图片 -->
+                <div class="time_pic">
+                  <a href="javascript: ;">
+                    <img src="images/phone1.jpeg" alt="商品" />
+                    <h6>
+                      Apple iPhone 6s (A1700) 64G玫瑰金色 移动通信电信4G手机
+                    </h6>
+                    <h5>￥5299</h5>
+                  </a>
+                  <a href="javascript: ;">
+                    <img src="images/phone2.jpg" alt="商品" />
+                    <h6>
+                      Apple iPhone 6s (A1700) 64G玫瑰金色 移动通信电信4G手机
+                    </h6>
+                    <h5>￥5299</h5>
+                  </a>
+                  <a href="javascript: ;">
+                    <img src="images/phone3.jpeg" alt="商品" />
+                    <h6>
+                      Apple iPhone 6s (A1700) 64G玫瑰金色 移动通信电信4G手机
+                    </h6>
+                    <h5>￥5299</h5>
+                  </a>
+                  <a href="javascript: ;">
+                    <img src="images/phone4.jpeg" alt="商品" />
+                    <h6>
+                      Apple iPhone 6s (A1700) 64G玫瑰金色 移动通信电信4G手机
+                    </h6>
+                    <h5>￥5299</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 导航电梯 -->
+            <div class="daohang">
+              <ul>
+                <!-- <li>&nbsp;小吉 &nbsp;秒杀</li> -->
+                <li>&nbsp;手机 &nbsp;数码</li>
+                <li>&nbsp;美妆馆</li>
+                <li>&nbsp;优选 &nbsp超市</li>
+                <li>&nbsp;全球购</li>
+              </ul>
+            </div>
+            <!-- 中心内容 -->
+            <div class="content">
+              <!-- 板块一——手机数码 -->
+              <div class="index1">
+                <h1>手机数码</h1>
+                <img src="images/store.png" alt="#" />
+              </div>
+              <!-- 板块二——美妆馆 -->
+              <div class="index2">
+                <h1>美妆馆</h1>
+                <img src="images/store.png" alt="#" />
+              </div>
+              <!-- 板块三——优选超市 -->
+              <div class="index3">
+                <h1>优选超市</h1>
+                <img src="images/store.png" alt="#" />
+              </div>
+              <!-- 板块四——全球购 -->
+              <div class="index4">
+                <h1>全球购</h1>
+                <img src="images/store.png" alt="#" />
+              </div>
+            </div>
+            <!-- 结尾部分 -->
+            <div class="end">
+              <h1>HSJ</h1>
+            </div>
+          </div>
+          <!-- ————————————核心1(手机数码)————————— -->
+          <div class="hexin">
+            <!-- 左侧 -->
+            <div class="cleft">
+              <!-- 商品类型 -->
+              <div class="leixing">
+                <p>手机、数码、通讯/手机、Apple苹果/iPhone 6s系</p>
+              </div>
+              <!-- 轮播图 -->
+              <div class="lunbo">
+                <img class="active" src="images/phone1.jpeg" />
+                <img src="images/phone2.jpg" />
+                <img src="images/phone3.jpeg" />
+                <img src="images/phone4.jpeg" />
+                <img src="images/phone5.jpg" />
+                <div class="suolue">
+                  <img class="active1" src="images/phone1.jpeg" />
+                  <img src="images/phone2.jpg" />
+                  <img src="images/phone3.jpeg" />
+                  <img src="images/phone4.jpeg" />
+                  <img src="images/phone5.jpg" />
+                </div>
+                <button id="left">上一张</button>
+                <button id="right">下一张</button>
+              </div>
+            </div>
+            <!-- 右侧 -->
+            <div class="cright">
+              <!-- 手机信息 -->
+              <div class="phone1">
+                <p id="font">
+                  <b>
+                    Apple iPhone 6s (A1700) 64G玫瑰金色 移动通信电信4G手机bbb123
+                  </b>
+                </p>
+                <p class="one">
+                  推荐使用下方[移动优惠购]，手机套餐齐搞定，不用换号，每月还有话费返
+                </p>
+                <div class="youhui">
+                  <p>
+                    价 &nbsp;&nbsp;&nbsp;&nbsp;格 <b>￥5299</b
+                    ><span id="one">降价通知</span>
+                  </p>
+                  <p>
+                    促 &nbsp;&nbsp;&nbsp;&nbsp;销
+                    <span
+                      ><span id="two">加价购</span>
+                      满999.00另加20.00，或满1999.00另加30.00，或满2999.00另加40.00，即可在购物车换购热销商品
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  支 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持
+                  <span> 以旧换新，闲置手机回收 4G套餐超值抢 礼品购</span>
+                </p>
+                <p>配 送 至 <span> 重庆市 沙坪坝区 重庆科技学院</span></p>
+                <div class="mes">
+                  <p id="color">
+                    选择颜色
+                    <button>金色</button>
+                    <button>银色</button>
+                    <button>黑色</button>
+                    <em id="cho">请选择颜色！</em>
+                  </p>
+                  <p id="big">
+                    内存容量
+                    <button>16G</button>
+                    <button>64G</button>
+                    <button>128G</button>
+                    <button>256G</button>
+                    <em id="cho">请选择大小！</em>
+                  </p>
+                  <p id="banben">
+                    选择版本
+                    <button>公开版</button>
+                    <button>移动版</button>
+                    <em id="cho">请选择版本！</em>
+                  </p>
+                  <p id="buy">
+                    购买方式
+                    <button>官方标配</button>
+                    <button>优惠移动版</button>
+                    <button>电信优惠版</button>
+                    <em id="cho">请选择适配！</em>
+                  </p>
+                </div>
+              </div>
+              <!-- 购物结算 -->
+              <div class="jiesuan">
+                <div class="good">
+                  已选择:
+                  <li id="color"></li>
+                  <li id="big"></li>
+                  <li id="banben"></li>
+                  <li id="buy"></li>
+                </div>
+                <div>价格：<em class="jiage">￥0</em></div>
+                <a href="javascript:;" class="decrement">-</a>
+                <input type="text" value="1" class="itxt" />
+                <a href="javascript:;" class="increment">+</a>
+                <span style="margin-left: 20px"
+                  >合计：<em class="all"></em
+                ></span>
+                <div class="shop"><button>加入购物车</button></div>
+              </div>
+            </div>
+          </div>
+
+          <!--  —————————— 核心2(美妆馆)-———————————— -->
+          <div>
+            <h1>3</h1>
+          </div>
+          <!-- 核心3(优选超市)-->
+          <div>
+            <h1>4</h1>
+          </div>
+          <!-- 核心4(全球购)-->
+          <div>
+            <h1>5</h1>
+          </div>
+          <!-- 核心5(闪购)-->
+          <div>
+            <h1>6</h1>
+          </div>
+          <!-- 核心6(团购)-->
+          <div>
+            <h1>7</h1>
+          </div>
+          <!-- 核心7(有趣)-->
+          <div>
+            <h1>8</h1>
+          </div>
+          <!-- 核心8(秒杀)-->
+          <div>
+            <h1>9</h1>
+          </div>
+        </div>
+      </div>
+      <!--———— 页面 ————-->
+      <!-- 我的购物车 -->
+      <div class="bow2">
+        <div class="top">
+          <img src="images/store.png" alt="car" />
+          <div class="name">
+            <h1>小吉优选</h1>
+            <h1>&nbsp;Xiao JI</h1>
+          </div>
+          <p style="font-size: 30px"><b> 购物车</b></p>
+        </div>
+        <div class="mid">
+          <h2>全部商品</h2>
+          <!-- 栏目 -->
+          <div class="bq">
+            <div class="input">
+              <input type="checkbox" class="check_all" />全选
+            </div>
+            <ul>
+              <li>商品</li>
+              <li>单价</li>
+              <li>数量</li>
+              <li>小计</li>
+              <li>操作</li>
+            </ul>
+          </div>
+          <!-- 商品 -->
+          <div class="goods">
+            <!-- <div class="good">
+              <input type="checkbox" />
+              <img src="images/phone1.jpeg" alt="图片" />
+              <p class="text">iPhone</p>
+              <span class="g-price"><em>￥5299</em></span>
+              <span class="num">
+                <a
+                  href="javascript:;"
+                  style="width: 15.2px; text-align: center"
+                  class="ind"
+                >
+                  -
+                </a>
+                <input type="text" value="1" />
+                <a href="javascript:;" class="dec">+</a>
+              </span>
+              <span class="price"><em>￥5299.00</em></span>
+              <span style="margin-top: 20px"
+                ><a href="javascript:;" class="del">删除</a>
+                <a href="javascript:;" class="re">重置</a>
+              </span>
+            </div>
+            <div class="good">
+              <input type="checkbox" />
+              <img src="images/phone3.jpeg" alt="图片" />
+              <p class="text">
+                iPhone
+                <br />已选择： Apple iPhone 6s (A1700)
+              </p>
+
+              <span class="g-price"><em>￥5499</em></span>
+              <span class="num">
+                <a
+                  href="javascript:;"
+                  style="width: 15.2px; text-align: center"
+                  class="ind"
+                >
+                  -
+                </a>
+                <input type="text" value="1" />
+                <a href="javascript:;" class="dec">+</a>
+              </span>
+              <span class="price"><em>￥5499.00</em></span>
+              <span style="margin-top: 20px"
+                ><a href="javascript:;" class="del">删除</a>
+                <a href="javascript:;" class="re">重置</a>
+              </span>
+            </div>
+            <div class="good">
+              <input type="checkbox" />
+              <img src="images/phone5.jpg" alt="图片" />
+              <p class="text">iPhone</p>
+              <span class="g-price"><em>￥5699</em></span>
+              <span class="num">
+                <a
+                  href="javascript:;"
+                  style="width: 15.2px; text-align: center"
+                  class="ind"
+                >
+                  -
+                </a>
+                <input type="text" value="1" />
+                <a href="javascript:;" class="dec">+</a>
+              </span>
+              <span class="price"><em>￥5699.00</em></span>
+              <span style="margin-top: 20px"
+                ><a href="javascript:;" class="del">删除</a>
+                <a href="javascript:;" class="re">重置</a>
+              </span>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="bottom">
+          <div class="bot">
+            <input type="checkbox" class="check_all" />全选
+            <a href="javascript:;" class="del1">删除选中的商品</a>
+            <a href="javascript:;" class="delall">清理购物车</a>
+            <p class="all1">
+              已经选择<em class="nums">1</em> 件商品 总价：<em class="prices"
+                >￥5299</em
+              >
+              <button>去结算</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bow3">2</div>
+    </div>
+  </body>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/shopping_car.js"></script>
+  <script src="js/home_page.js"></script>
+  <script src="js/login.js"></script>
+</html>
